@@ -2,7 +2,7 @@
 include('conexao.php');
 $sql = 'SELECT * FROM usuario';
 $result = mysqli_query($con, $sql);
-$row = mysqli_fetch_array($result);
+//$row = mysqli_fetch_array($result);
 print_r($row);
 ?>
 <!DOCTYPE html>
