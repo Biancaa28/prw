@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(133, 187, 235);
+        }
+        h1{
+            text-align: center;
+        }
+        fieldset{
+            width: 500px;
+            height: 270px;
+            margin: auto;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro Agenda</h1>
+
+    <form action="cadastro_agendaNew.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <table>
+
+        <tr>
+            <td>Nome:</td>
+            <td><input name= "nome" type="text" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Apelido:</td>
+            <td><input name= "apelido" type="text" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Endereco:</td>
+            <td><input name= "endereco" type="text" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Bairro:</td>
+            <td><input name= "bairro" type="text" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Cidade:</td>
+            <td><input name= "cidade" type="text" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Estado:</td>
+            <td><select name="estado"><br>
+                <option value="MG">MG</option>
+                <option value="PR">PR</option>
+                <option value="SC">SC</option>
+                <option value="RS">RS</option>
+                <option value="PA">PA</option>
+                <option value="PE">PE</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="PB">PB</option>
+                <option value="RO">RO</option>
+                <option value="ES">ES</option>
+                <option value="BA">BA</option>
+                <option value="RR">RR</option>
+                <option value="AL">AL</option>
+                <option value="MA">MA</option>
+                <option value="RN">RN</option>
+                <option value="AM">AM</option>
+                <option value="AC">AC</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+                <option value="CE">CE</option>
+                <option value="PI">PI</option>
+                <option value="AP">AP</option>
+                <option value="SP">SP</option>
+                <option value="GO">GO</option>
+                <option value="RJ">RJ</option>
+                <option value="DF">DF</option>
+            </select></td>
+        </tr>
+        <tr>
+            <br>
+            <td>Telefone:</td>
+            <td><input name= "telefone" type="text" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Celular:</td>
+            <td><input name= "celular" type="text" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input name= "email" type="text" size="50"><br></td>
+        </tr>
+        <tr>
+            <td>Foto:</td>
+            <td><input type="file" id="foto" name="foto" accept="image/*"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input id= "btnEnviar" type= "submit" value= "Enviar">
+            </td>
+        </tr>
+    </table>    
+    </fieldset>
+    </form>
+</body>
+</html>
