@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Fluxo de Caixa</title>
+    <style>
+        body{
+            background-color: rgb(133, 187, 235);
+        }
+        h1{
+            text-align: center;
+        }
+        fieldset{
+            width: 500px;
+            height: 270px;
+            margin: auto;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Fluxo de caixa</h1>
+
+    <form action="cadastro_fluxo_caixa.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <table>
+
+        <tr>
+            <td>Data:</td>
+            <td><input name= "data" type="date"><br></td>
+        </tr>
+        <tr>
+            <td>Tipo:</td>
+            <td><input name= "tipo" type="radio" id="tipo" value="entrada">Entrada<br></td>
+            <td><input name= "tipo" type="radio" id="tipo" value="saida">Saida<br></td>
+        </tr>
+        <tr>
+            <td>Valor:</td>
+            <td><input name= "valor" type="text" size="100" placeholder="R$"><br></td>
+        </tr>
+        <tr>
+            <td>Historico:</td>
+            <td><input name= "historico" type="text" size="150"><br></td>
+        </tr>
+        <tr>
+            <td>Cheque:</td>
+            <td><select name="cheque"><br>
+                <option value="Sim">Sim</option>
+                <option value="Não">Não</option>
+            </select></td>
+        </tr>
+        <tr>
+            <br>
+
+        <tr>
+            <td colspan="2">
+                <input id= "btnEnviar" type= "submit" value= "Enviar">
+            </td>
+        </tr>
+    </table>    
+    </fieldset>
+    </form>
+</body>
+</html>
