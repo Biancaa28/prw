@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Fluxo de Caixa</title>
+    <style>
+        body{
+            background-color: rgb(133, 187, 235);
+        }
+        h1{
+            text-align: center;
+        }
+        fieldset{
+            width: 500px;
+            height: 270px;
+            margin: auto;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Consulta de Fluxo de caixa</h1>
+
+    <form action="consulta_fluxo_caixa.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <table>
+
+        <tr>
+            <td>Tipo de consulta:<br></td>
+            <td><input name= "tipo" type="radio" id="tipo" value="saldo">Saldo Total<br></td>
+            <td><input name= "tipo" type="radio" id="tipo" value="saida">Total Saídas<br></td>
+            <td><input name= "tipo" type="radio" id="tipo" value="entrada">Total Entradas<br></td>
+        </tr>
+        <tr>
+            <br>
+
+        <tr>
+            <td colspan="2">
+                <input id= "btnEnviar" type= "submit" value= "Enviar">
+            </td>
+        </tr>
+    </table>    
+    </fieldset>
+    </form>
+</body>
+</html>

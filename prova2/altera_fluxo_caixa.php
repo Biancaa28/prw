@@ -25,7 +25,7 @@ $row = mysqli_fetch_array($result);
 
     <form action="altera_fluxo_caixa_exe.php" method="post" enctype="multipart/form-data">
         Data: <input name= "data" value="<?php echo $row['data']?>" type="date"><br>
-        Tipo: <input name= "tipo" value="<?php echo $row['tipo']?>" type="radio"><br>
+        Tipo: <input name= "tipo" <?php if($row['tipo'] == 'entrada') echo "checked"?> type="radio" value="entrada">entrada <input name= "tipo"<?php if($row['tipo'] == 'saida') echo "checked"?> type="radio" value="saida">saída<br>
         Valor: <input name= "valor" value="<?php echo $row['valor']?>" type= "text"><br>
         Historico: <input name= "historico" value="<?php echo $row['historico']?>" type= "text"><br>
         Cheque: <input name= "cheque" value="<?php echo $row['cheque']?>" type= "text"><br>
